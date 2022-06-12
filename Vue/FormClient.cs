@@ -13,13 +13,13 @@ namespace Banque
     public partial class FormClient : Form
     {
 
-        private Client c;
+        private Cours c;
         
-        public FormClient(Client unClient)
+        public FormClient(Cours unCours)
         {
             InitializeComponent();
 
-            this.c = unClient;
+            this.c = unCours;
         }
 
         public FormClient()
@@ -34,18 +34,17 @@ namespace Banque
         private void FormClient_Load(object sender, EventArgs e)
         {
 
-            tbNum.Text = c.Num.ToString();
-            tbNom.Text = c.Nom;
-            tbPrenom.Text = c.Prenom;
-            tbAdresse.Text = c.Adresse;
+            tbNum.Text = c.Id.ToString();
+            tbNom.Text = c.IdProfesseur.ToString();
+            tbPrenom.Text = c.IdInstrument.ToString();
+            tbAdresse.Text = c.Jourheure.ToString();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            c.Adresse = tbAdresse.Text;
-            c.Nom = tbNom.Text;
-            c.Prenom = tbPrenom.Text;
+           //c.Id = tbAdresse.Text;
+            //c.Nom = tbNom.Text;
             this.Close();
         }
 

@@ -10,7 +10,7 @@ namespace Banque.DAL
     {
         private static  string providerMysql = "localhost";
 
-        private static string dataBaseMysql = "comptes";
+        private static string dataBaseMysql = "projetmusique";
 
         private static string uidMysql = "root";
 

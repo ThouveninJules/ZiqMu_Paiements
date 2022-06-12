@@ -11,54 +11,46 @@ namespace Banque.Controleur
     class Mgr
     {
 
-        CompteDao cd = new CompteDao();
-        ClientDao cld = new ClientDao();
-
+        PersonneDao cd = new PersonneDao();
+        CoursDao cld = new CoursDao();
+        InscriptionDao insc = new InscriptionDao();
     
       
 
-        public List<Client> chargementClBD()
+        public List<Cours> chargementClBD()
         {
 
-            return(cld.getClients());
+            return(cld.getCours());
 
         }
 
-        public List<Compte> chargementCBD( Client cl)
+        public List<Adherents> chargementCBD( /*Adherents cl*/)
         {
 
-            return cd.getComptes(cl);
+            return cd.getAdh();
 
         }
 
-        
-
-        public void updateClient(Client c)
+        public List<Inscription> chargementInscr(int id)
         {
-
-            cld.updateClient(c);
-
+            return insc.GetInscription(id);
         }
-
-        public void updateSolde(Compte c)
+        public void payerInscription(int idAdh, int idCours)
         {
-
-            cd.updateSolde(c);
-
+            insc.payerInscription(idAdh, idCours);
         }
-
-        public void updateDecouvert(CompteCourant c)
+        public void rembourserInscription(int idAdh, int idCours)
         {
-
-            cd.updateDecouvert(c);
-
+            insc.rembourserInscription(idAdh, idCours);
         }
-
-        public void updateTaux(CompteEpargne c)
+        public void annulerInscription(int idAdh, int idCours)
         {
-            cd.updateTaux(c);
+            insc.annulerInscription(idAdh, idCours);
         }
-
+        public void supprimerInscription(int idAdh, int idCours)
+        {
+            insc.supprimerInscription(idAdh, idCours);
+        }
 
     }
 }

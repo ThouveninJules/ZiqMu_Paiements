@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
+using Banque.Modele;
+
 
 namespace Banque.DAL
 {
@@ -25,18 +28,21 @@ namespace Banque.DAL
             {
                 connString = "SERVER=" + unProvider + ";" + "DATABASE=" +
                 uneDataBase + ";" + "UID=" + unUid + ";" + "PASSWORD=" + unMdp + ";" ;
+                //MessageBox.Show(connString);
                 try
                 {
                     oleCn = new MySqlConnection(connString);
                 }
                 catch (Exception emp)
                 {
-                    throw(emp);
+                    MessageBox.Show(emp.Message);
+                    throw (new Exception(connString));
                 }
             }
             catch (Exception emp)
             {
-                throw (emp);
+                MessageBox.Show(emp.Message);
+                throw (new Exception(connString));
             }
 
 
@@ -68,9 +74,8 @@ namespace Banque.DAL
                 }
                 catch (Exception emp)
                 {
-                    throw(emp);
-
-
+                    MessageBox.Show(emp.Message);
+                    throw (emp);
                 }
                 return connection;
 

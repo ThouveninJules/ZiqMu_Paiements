@@ -67,14 +67,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controleur\Mgr.cs" />
-    <Compile Include="DAL\ClientDao.cs" />
-    <Compile Include="DAL\CompteDao.cs" />
+    <Compile Include="DAL\InscriptionDao.cs" />
+    <Compile Include="DAL\CoursDao.cs" />
+    <Compile Include="DAL\PersonneDao.cs" />
     <Compile Include="DAL\Fabrique.cs" />
     <Compile Include="DAL\ConnectionSql.cs" />
-    <Compile Include="Modele\Client.cs" />
-    <Compile Include="Modele\Compte.cs" />
-    <Compile Include="Modele\CompteCourant.cs" />
-    <Compile Include="Modele\CompteEpargne.cs" />
+    <Compile Include="Modele\Inscription.cs" />
+    <Compile Include="Modele\Cours.cs" />
+    <Compile Include="Modele\Personne.cs" />
+    <Compile Include="Modele\Adherents.cs" />
+    <Compile Include="Modele\Professeurs.cs" />
     <Compile Include="Vue\Gestion.cs">
       <SubType>Form</SubType>
     </Compile>
