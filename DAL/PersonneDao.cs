@@ -19,8 +19,6 @@ namespace Banque.DAL
 
         private  MySqlCommand Ocom;
 
-        private CoursDao cld;
-
 
         public  List<Personne> getComptes(Personne p)
         {
@@ -118,7 +116,7 @@ namespace Banque.DAL
 
         }
 
-        public List<Adherents> getAdh(/*Adherents a*/)
+        public List<Adherents> getAdh()
         {
 
             List<Adherents> lc = new List<Adherents>();
@@ -132,7 +130,7 @@ namespace Banque.DAL
 
 
 
-                Ocom = maConnexionSql.reqExec("Select p.id,p.nom,p.prenom,p.tel,p.adresse,p.mail,a.niveau,p.solde from personne p, adherents a where p.id = a.id" /*and p.id = " + a.getId*/);
+                Ocom = maConnexionSql.reqExec("Select p.id,p.nom,p.prenom,p.tel,p.adresse,p.mail,a.niveau,p.solde from personne p, adherents a where p.id = a.id");
 
                 MySqlDataReader reader = Ocom.ExecuteReader();
 

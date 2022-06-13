@@ -189,8 +189,16 @@ namespace Banque
                         }
                         else
                         {
-                            btnRembourser.Enabled = true;
-                            btnRembourser.BackColor = Color.FromArgb(128, 128, 255);
+                            if (selection.Paye == 1)
+                            {
+                                btnRembourser.Enabled = true;
+                                btnRembourser.BackColor = Color.FromArgb(128, 128, 255);
+                            }
+                            else
+                            {
+                                btnRembourser.Enabled = false;
+                                btnRembourser.BackColor = Color.Gray;
+                            }
                         }
                         btnPayer.Enabled = false;
                         btnPayer.BackColor = Color.Gray;

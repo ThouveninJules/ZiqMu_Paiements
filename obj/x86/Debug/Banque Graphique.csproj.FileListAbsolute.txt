@@ -100,7 +100,6 @@ C:\Users\Olivier\OneDrive - Efrei\Bureau\Banque V4 - Etudiants\bin\Debug\Google.
 C:\Users\Olivier\OneDrive - Efrei\Bureau\Banque V4 - Etudiants\bin\Debug\MySql.Data.xml
 C:\Users\Olivier\OneDrive - Efrei\Bureau\Banque V4 - Etudiants\obj\x86\Debug\Banque Graphique.csproj.AssemblyReference.cache
 C:\Users\Olivier\OneDrive - Efrei\Bureau\Banque V4 - Etudiants\obj\x86\Debug\Banque.Gestion.resources
-C:\Users\Olivier\OneDrive - Efrei\Bureau\Banque V4 - Etudiants\obj\x86\Debug\Banque.FormClient.resources
 C:\Users\Olivier\OneDrive - Efrei\Bureau\Banque V4 - Etudiants\obj\x86\Debug\Banque.Properties.Resources.resources
 C:\Users\Olivier\OneDrive - Efrei\Bureau\Banque V4 - Etudiants\obj\x86\Debug\Banque Graphique.csproj.GenerateResource.cache
 C:\Users\Olivier\OneDrive - Efrei\Bureau\Banque V4 - Etudiants\obj\x86\Debug\Banque Graphique.csproj.CoreCompileInputs.cache
